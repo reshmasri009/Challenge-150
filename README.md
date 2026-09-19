@@ -15,7 +15,48 @@ Approach
 
 This ensures in-place merging without extra space
 
-# Complexity
+ Complexity
 
 Time Complexity-O(m+n)
 Space Complexity-O(1)
+
+******************************************************************************************************************************************
+Challenge 2
+
+# Remove elements
+
+Approach
+-Traverse the array once.
+-Compare each element with the target value
+-If it is not equal,keep it in the result.
+-Return the new array.
+
+Compplexity
+
+Time Complexity-O(n)
+Space Complexity-O(n)
+
+******************************************************************************************************************************************
+
+Challenge 3
+
+# Remove duplicates from sorted array
+
+Approach
+-Sort the array first (so duplicates are adjacent).
+-Use two pointers:
+-i = position of last unique element.
+-j = scanning pointer.
+-If arr[j] != arr[i], move i forward and overwrite arr[i] with arr[j].
+-Return the array up to index i.
+
+Complexity
+
+Time: O(n log n) 
+Space: O(1)
+
+
+
+
+
+
