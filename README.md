@@ -55,6 +55,78 @@ Complexity
 Time: O(n log n) 
 Space: O(1)
 
+*******************************************************************************************************************************************
+
+Challenge 4
+
+# Remove duplicates from sorted array-II
+
+Approach
+-Use two pointers:
+i → tracks the position of the last unique element.
+j → scans through the array.
+-Start with i = 0.
+For each j from 1 to end:
+-If arr[j] != arr[i], move i forward and set arr[i] = arr[j].
+-At the end, the array up to index i contains all unique elements.
+
+Complexity
+
+Time : O(n)
+Space : O(1)
+
+*************************************************************************************************************************************************
+
+Challenge 5
+
+# Merge elements
+
+Approach
+-Use three pointers:
+p1 = m - 1 → last valid element in nums1.
+p2 = n - 1 → last element in nums2.
+p = m + n - 1 → last index of nums1.
+-Compare nums1[p1] and nums2[p2]:
+Place the larger one at nums1[p].
+-Move the pointer backward.
+-Continue until one array is exhausted.
+-If nums2 still has elements, copy them into nums1.
+
+Complexity
+Time :O(m+n)
+Space : O(1)
+
+****************************************************************************************************************************************************
+
+Challenge 6
+
+# Rotate Array
+
+Approach
+array[n-k:] → last k elements (these move to the front).
+array[:n-k] → first n-k elements (these shift to the back).
+-Concatenate them → rotated array.
+
+Complexity
+Time:O(n)
+Space:O(n)
+
+*****************************************************************************************************************************************************
+
+Challenge 7
+
+# Best time to buy and sell products
+
+Aprroach
+-Track the minimum price seen so far.
+-At each step, calculate the profit if you sold today (current_price - min_price).
+-Update the maximum profit if this profit is larger.
+
+Complexity
+Time:O(n)
+Space:O(1)
+
+
 
 
 
